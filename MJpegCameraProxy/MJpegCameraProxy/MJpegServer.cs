@@ -436,6 +436,13 @@ namespace MJpegCameraProxy
 				{
 					#region www
 					int permissionRequired;
+
+					// If no page is requested, default to "index.html"
+					if (string.IsNullOrEmpty(requestedPage))
+					{
+						requestedPage = "index.html";
+					}
+
 					if (!Util.TryGetValue(requestedPage.ToLower(), MJpegWrapper.cfg.GetWwwFilesList(), out permissionRequired))
 						permissionRequired = -1;
 
