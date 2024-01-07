@@ -73,3 +73,5 @@ with a permission level you set in the admin interface.
 To access the included example "all.html", you would go to:
 
 http://localhost:44456/all.html
+
+** using BPUtil version from  03/06 2020
